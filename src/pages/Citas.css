@@ -1,0 +1,211 @@
+/* Estilos generales */
+.container {
+    max-width: 1200px;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  h3 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el formulario de citas */
+  .card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card input,
+  .card select,
+  .card textarea {
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+  
+  .card input:focus,
+  .card select:focus,
+  .card textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Estilos para la lista de citas */
+  .list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .list-group-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-group-item strong {
+    color: #007bff;
+    font-size: 1.1rem;
+  }
+  
+  .list-group-item button {
+    margin-right: 10px;
+  }
+  
+  .list-group-item .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  .list-group-item .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  .list-group-item .btn-danger {
+    background-color: #ff0019;
+    border-color: #ff0019;
+  }
+  
+  .list-group-item .btn-danger:hover {
+    background-color: #18090b;
+  }
+  
+  /* Estilo de la alerta de éxito */
+  .alerta-exito {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fadeInOut 3s ease-in-out;
+  }
+
+
+
+
+
+/* Margen de citas y citas reservadas */
+  li {
+    margin-bottom: 20px
+}
+
+li.nav-item {
+  padding: 0px;
+}
+
+.nav-list {
+  display: flex; 
+  gap:20px; 
+
+}
+
+/* Estilo base para los botones del navbar */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Efecto hover */
+.nav-link:hover {
+  background-color: #004b70; 
+  color: #ffffff; 
+  border-radius: 5px; 
+  transform: scale(1.05); 
+}
+
+/* Efecto para el botón activo */
+.nav-link.active {
+  background-color: #004b70; 
+  border-radius: 5px;
+}
+
+/* Estilo base para el botón de cerrar sesión */
+.logout-button {
+  background-color: #f44336; /* Color rojo base */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Efecto hover */
+.logout-button:hover {
+  background-color: #d32f2f; 
+  color: white; 
+}
+
+
+
+
+  /* Animación de la alerta */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+
+   
+  }
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
